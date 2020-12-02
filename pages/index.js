@@ -9,9 +9,9 @@ function Home() {
   if (!data) return <p className="p-4">Loading...</p>;
 
   return (
-    <div className="overflow-y-scroll">
+    <div className="overflow-y-auto">
       {[...data.tweets].reverse().map((tweet) => (
-        <div className="px-4 py-3 border-b border-gray-200 overflow-y-scroll">
+        <div className="px-4 py-3 border-b border-gray-200 overflow-y-auto">
           <div className="flex">
             {/* Avatar */}
             <img
